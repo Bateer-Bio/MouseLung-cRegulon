@@ -2,7 +2,7 @@
 This repository provides the workflow to apply **cRegulon** (Combinatorial Regulon) to mouse lung single-cell RNA-seq and ATAC-seq data. The method identifies transcription factor (TF) combinatorial modules as regulatory units underpinning cell type landscapes.
 
 > **Reference Paper**:  
-> Feng Z, Chen X, Duren Z, et al. Modeling combinatorial regulation from single-cell multi-omics provides regulatory units underpinning cell type landscape using cRegulon. *Genome Biology*. 2025;26(1):220.  
+> Feng, Z., Chen, X., Duren, Z. et al. Modeling combinatorial regulation from single-cell multi-omics provides regulatory units underpinning cell type landscape using cRegulon. *Genome Biol* 26, 220 (2025)  
 > [DOI: 10.1186/s13059-025-03680-w](https://doi.org/10.1186/s13059-025-03680-w)
 
 ---
