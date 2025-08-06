@@ -17,8 +17,36 @@ unzip master.zip
 cd cRegulon-master
 wget -O cRegulonData.tar.gz https://figshare.com/ndownloader/files/47503895
 tar -xzvf cRegulonData.tar.gz
-、、、
+```
 
 ## 2. Data Preparation
 
 ## 3. Run cRegulon Pipeline
+### Step 1: Preprocessing & Pseudo-bulk Generation
+```
+python3 cRegulon.py prep --name Lung \
+  --rna ./example_data/Lung/scRNA/ \
+  --rna_meta ./example_data/Lung/lung_scRNA_Cluster.txt \
+  --atac ./example_data/Lung/scATAC/ \
+  --atac_meta ./example_data/Lung/lung_scATAC_Cluster.txt \
+  -g mouse
+```
+
+### Step 2: GRN Construction (Per Cluster)
+```
+for c in $(cat ./PseudoBulk/Lung_CellType.txt); do
+  python3 cRegulon.py grn -n Lung -ct $c -g mm10 -p 12
+done
+```
+
+### Step 3: Identify cRegulons
+```
+python3 cRegulon.py model -n Lung -mmin 4 -mmax 20
+```
+*Outputs​​*: Results/Lung/ (TF modules, association matrices, annotated subnetworks)
+
+
+
+
+
+
