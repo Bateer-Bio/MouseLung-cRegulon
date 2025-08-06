@@ -17,3 +17,7 @@ unzip master.zip
 cd cRegulon-master
 wget -O cRegulonData.tar.gz https://figshare.com/ndownloader/files/47503895
 tar -xzvf cRegulonData.tar.gz
+
+## 2. Data Preparation
+
+## 3. Run cRegulon Pipeline
