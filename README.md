@@ -11,12 +11,13 @@ This repository provides the workflow to apply **cRegulon** (Combinatorial Regul
 Follow the official cRegulon installation guide:  
 📦 [cRegulon GitHub Repository](https://github.com/SUwonglab/cRegulon)
 
-```bash
+```
 wget https://github.com/SUwonglab/cRegulon/archive/master.zip
 unzip master.zip
 cd cRegulon-master
 wget -O cRegulonData.tar.gz https://figshare.com/ndownloader/files/47503895
 tar -xzvf cRegulonData.tar.gz
+、、、
 
 ## 2. Data Preparation
 
