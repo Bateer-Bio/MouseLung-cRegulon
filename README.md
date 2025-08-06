@@ -43,7 +43,7 @@ done
 ```
 python3 cRegulon.py model -n Lung -mmin 4 -mmax 20
 ```
-*Outputs​​*: Results/Lung/ (TF modules, association matrices, annotated subnetworks)
+**Outputs*​​*: Results/Lung/ (TF modules, association matrices, annotated subnetworks)
 
 
 
